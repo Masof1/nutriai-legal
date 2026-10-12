@@ -1,0 +1,59 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Confidentialité NUTRI AI</title><link rel="stylesheet" href="style.css"></head><body><main>
+<nav><a href="index.html">NUTRI AI</a><a href="confidentialite.html">Confidentialité</a><a href="support.html">Support</a></nav>
+<h1>Politique de confidentialité</h1>
+<p class="muted">Dernière mise à jour : {{DATE}}</p>
+
+<div class="card">
+<p><strong>En bref.</strong> NUTRI AI enregistre ce que tu notes (repas, objectifs, pesées, compléments) pour te l'afficher. Tes données ne servent ni à la publicité ni au profilage, et ne sont jamais vendues. Tu peux tout supprimer depuis l'app, à tout moment.</p>
+</div>
+
+<h2>1. Responsable du traitement</h2>
+<p>{{EDITEUR}} — contact : <a href="mailto:{{EMAIL}}">{{EMAIL}}</a>.</p>
+
+<h2>2. Données traitées</h2>
+<table>
+<tr><th>Données</th><th>D'où elles viennent</th><th>Pourquoi</th></tr>
+<tr><td>Identifiant de compte (identifiant « Se connecter avec Apple », adresse email ou adresse relais Apple)</td><td>Ta connexion</td><td>Te reconnaître et isoler tes données de celles des autres utilisateurs</td></tr>
+<tr><td>Journal alimentaire : repas, quantités, calories, macro et micronutriments, aliments enregistrés, plats habituels</td><td>Ta saisie, le scan de code-barres, le scan photo</td><td>Le journal et les bilans de l'app</td></tr>
+<tr><td>Photos de repas</td><td>Ton appareil photo ou ta galerie, si tu choisis d'en ajouter</td><td>Estimer le contenu du repas et l'afficher dans ton journal</td></tr>
+<tr><td>Objectifs (calories, macros, pas)</td><td>Ta saisie</td><td>Comparer tes apports à tes objectifs</td></tr>
+<tr><td>Données de santé : pas, énergie active, poids, masse grasse</td><td>Apple Santé (lecture seule, avec ton autorisation) ou ta saisie manuelle</td><td>Ajuster tes objectifs, suivre ta tendance de poids</td></tr>
+<tr><td>Compléments alimentaires et prises</td><td>Ta saisie</td><td>Les rappeler dans ton journal et les compter dans ton bilan</td></tr>
+</table>
+<p>Ce sont en partie des <strong>données de santé</strong> : elles ne sont traitées que pour te fournir les fonctions que tu utilises, sur la base de ton consentement, que tu peux retirer en supprimant ton compte ou en coupant l'accès dans Réglages → Santé.</p>
+<p>NUTRI AI n'écrit jamais dans Apple Santé. Les données d'Apple Santé ne sont utilisées ni pour la publicité, ni pour de l'exploration de données, ni partagées à des fins commerciales.</p>
+
+<h2>3. Sous-traitants</h2>
+<table>
+<tr><th>Prestataire</th><th>Ce qu'il reçoit</th><th>Lieu</th></tr>
+<tr><td>Supabase (hébergement de la base, des comptes et des photos)</td><td>Toutes les données du compte</td><td>Union européenne (Irlande)</td></tr>
+<tr><td>Google — Gemini (analyse rédigée de la semaine, si tu la demandes)</td><td>Moyennes de tes apports sur 7 jours et tendance de poids, <strong>sans ton nom ni ton identifiant</strong></td><td>États-Unis</td></tr>
+<tr><td>Scan photo, si tu l'utilises : la photo passe par Supabase (fonction serveur), puis par notre service d'analyse hébergé chez Railway, puis par <strong>Anthropic</strong> (modèle Claude), qui estime les aliments</td><td>La photo du repas et l'éventuelle précision que tu tapes, <strong>sans ton nom ni ton identifiant</strong>. Notre service ne conserve ni la photo ni le résultat : ils transitent en mémoire. La conservation chez Anthropic suit <a href="https://www.anthropic.com/legal/privacy">sa propre politique</a>.</td><td>Railway : États-Unis (est) · Anthropic : États-Unis</td></tr>
+<tr><td>Open Food Facts (base publique de produits)</td><td>Le code-barres scanné, rien d'autre</td><td>France</td></tr>
+</table>
+<p>Si un prestataire change (par exemple le service d'analyse de photo), cette page est mise à jour <strong>avant</strong> le changement.</p>
+<p>Les transferts hors de l'Union européenne s'appuient sur les clauses contractuelles types de la Commission européenne ou sur le cadre de protection des données UE–États-Unis.</p>
+
+<h2>4. Ce que NUTRI AI ne fait pas</h2>
+<ul>
+<li>Pas de publicité, pas de traceur publicitaire, pas d'outil de mesure d'audience tiers.</li>
+<li>Pas de vente ni de location de données.</li>
+<li>Pas de diagnostic médical : les repères affichés sont informatifs.</li>
+</ul>
+
+<h2>5. Durée de conservation</h2>
+<p>Tes données sont conservées tant que ton compte existe. <strong>Profil → Supprimer mon compte</strong> efface immédiatement et définitivement ton compte, ton journal, tes aliments, objectifs, pesées, compléments et photos. Des copies techniques peuvent subsister chez l'hébergeur le temps de son cycle de sauvegarde, puis disparaissent.</p>
+
+<h2>6. Tes droits</h2>
+<p>Tu peux accéder à tes données, les rectifier, les supprimer, en demander une copie (portabilité), t'opposer à un traitement ou retirer ton consentement, en écrivant à <a href="mailto:{{EMAIL}}">{{EMAIL}}</a>. Tu peux aussi saisir la CNIL (<a href="https://www.cnil.fr">cnil.fr</a>).</p>
+
+<h2>7. Sécurité</h2>
+<p>Les échanges sont chiffrés (HTTPS). Chaque compte n'a accès qu'à ses propres données, règle appliquée par la base elle-même. Les photos sont privées et ne s'affichent que par des liens temporaires. Les clés des services d'analyse restent sur le serveur, jamais dans l'app.</p>
+
+<h2>8. Âge minimum</h2>
+<p>NUTRI AI s'adresse aux personnes de 16 ans et plus.</p>
+
+<h2>9. Modifications</h2>
+<p>En cas de changement, la date en haut de page est mise à jour. Un changement important sera signalé avant de s'appliquer.</p>
+</main></body></html>
