@@ -20,6 +20,7 @@
 <tr><td>Objectifs (calories, macros, pas)</td><td>Ta saisie</td><td>Comparer tes apports à tes objectifs</td></tr>
 <tr><td>Données de santé : pas, énergie active, poids, masse grasse</td><td>Apple Santé (lecture seule, avec ton autorisation) ou ta saisie manuelle</td><td>Ajuster tes objectifs, suivre ta tendance de poids</td></tr>
 <tr><td>Compléments alimentaires et prises</td><td>Ta saisie</td><td>Les rappeler dans ton journal et les compter dans ton bilan</td></tr>
+<tr><td>Retours que tu nous envoies (« Donner mon avis », raison de départ)</td><td>Ta saisie, avec la version de l'app et le modèle d'iPhone</td><td>Améliorer l'app et te répondre si tu laisses ton e-mail</td></tr>
 </table>
 <p>Ce sont en partie des <strong>données de santé</strong> : elles ne sont traitées que pour te fournir les fonctions que tu utilises, sur la base de ton consentement, que tu peux retirer en supprimant ton compte ou en coupant l'accès dans Réglages → Santé.</p>
 <p>NUTRI AI n'écrit jamais dans Apple Santé. Les données d'Apple Santé ne sont utilisées ni pour la publicité, ni pour de l'exploration de données, ni partagées à des fins commerciales.</p>
@@ -31,13 +32,15 @@
 <tr><td>Google — Gemini (analyse rédigée de la semaine, si tu la demandes)</td><td>Moyennes de tes apports sur 7 jours et tendance de poids, <strong>sans ton nom ni ton identifiant</strong></td><td>États-Unis</td></tr>
 <tr><td>Scan photo, si tu l'utilises : la photo passe par Supabase (fonction serveur), puis par notre service d'analyse hébergé chez Railway, puis par <strong>Anthropic</strong> (modèle Claude), qui estime les aliments</td><td>La photo du repas et l'éventuelle précision que tu tapes, <strong>sans ton nom ni ton identifiant</strong>. Notre service ne conserve ni la photo ni le résultat : ils transitent en mémoire. La conservation chez Anthropic suit <a href="https://www.anthropic.com/legal/privacy">sa propre politique</a>.</td><td>Railway : États-Unis (est) · Anthropic : États-Unis</td></tr>
 <tr><td>Open Food Facts (base publique de produits)</td><td>Le code-barres scanné, rien d'autre</td><td>France</td></tr>
+<tr><td>PostHog (statistiques d'usage anonymes)</td><td>Les étapes utilisées (ouverture, écrans du premier lancement, repas noté, bilan ouvert…), la version de l'app et le modèle d'iPhone, sous un <strong>identifiant aléatoire par installation</strong> — jamais ton nom, ton e-mail, ni ce que tu manges. Désactivable dans Profil → « Statistiques anonymes ».</td><td>Union européenne (Allemagne)</td></tr>
+<tr><td>Resend (envoi d'e-mails)</td><td>Ton adresse e-mail, pour les codes de connexion et nos réponses au support</td><td>Union européenne (Irlande) pour l'envoi ; société américaine</td></tr>
 </table>
 <p>Si un prestataire change (par exemple le service d'analyse de photo), cette page est mise à jour <strong>avant</strong> le changement.</p>
 <p>Les transferts hors de l'Union européenne s'appuient sur les clauses contractuelles types de la Commission européenne ou sur le cadre de protection des données UE–États-Unis.</p>
 
 <h2>4. Ce que NUTRI AI ne fait pas</h2>
 <ul>
-<li>Pas de publicité, pas de traceur publicitaire, pas d'outil de mesure d'audience tiers.</li>
+<li>Pas de publicité, pas de traceur publicitaire. Les seules statistiques sont des statistiques d'usage <strong>anonymes</strong> (voir § 3, PostHog), que tu peux couper dans Profil → « Statistiques anonymes ».</li>
 <li>Pas de vente ni de location de données.</li>
 <li>Pas de diagnostic médical : les repères affichés sont informatifs.</li>
 </ul>
