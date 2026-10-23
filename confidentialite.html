@@ -2,7 +2,7 @@
 <title>Confidentialité NUTRI AI</title><link rel="stylesheet" href="style.css"></head><body><main>
 <nav><a href="index.html">NUTRI AI</a><a href="confidentialite.html">Confidentialité</a><a href="cgu.html">Conditions</a><a href="support.html">Support</a></nav>
 <h1>Politique de confidentialité</h1>
-<p class="muted">Dernière mise à jour : 20 octobre 2026</p>
+<p class="muted">Dernière mise à jour : 24 octobre 2026</p>
 
 <div class="card">
 <p><strong>En bref.</strong> NUTRI AI enregistre ce que tu notes (repas, objectifs, pesées, compléments) pour te l'afficher. Tes données ne servent ni à la publicité ni au profilage, et ne sont jamais vendues. Tu peux tout supprimer depuis l'app, à tout moment.</p>
@@ -29,7 +29,7 @@
 <table>
 <tr><th>Prestataire</th><th>Ce qu'il reçoit</th><th>Lieu</th></tr>
 <tr><td>Supabase (hébergement de la base, des comptes et des photos)</td><td>Toutes les données du compte</td><td>Union européenne (Irlande)</td></tr>
-<tr><td>Google — Gemini (analyse rédigée de la semaine, si tu la demandes)</td><td>Moyennes de tes apports sur 7 jours, ton âge, ton sexe et ta tendance de poids (jamais avant 13 ans), <strong>sans ton nom ni ton identifiant</strong></td><td>États-Unis</td></tr>
+<tr><td><strong>Anthropic</strong> (modèle Claude) : analyse rédigée de la semaine, si tu la demandes</td><td>Moyennes de tes apports sur 7 jours, ton âge, ton sexe et ta tendance de poids (jamais avant 13 ans), <strong>sans ton nom ni ton identifiant</strong>. La conservation chez Anthropic suit <a href="https://www.anthropic.com/legal/privacy">sa propre politique</a> ; ses conditions commerciales excluent l'entraînement de ses modèles sur ces données.</td><td>États-Unis</td></tr>
 <tr><td>Scan photo, si tu l'utilises : la photo passe par Supabase (fonction serveur), puis par notre service d'analyse hébergé chez Railway, puis par <strong>Anthropic</strong> (modèle Claude), qui estime les aliments</td><td>La photo du repas et l'éventuelle précision que tu tapes, <strong>sans ton nom ni ton identifiant</strong>. Notre service ne conserve ni la photo ni le résultat : ils transitent en mémoire. La conservation chez Anthropic suit <a href="https://www.anthropic.com/legal/privacy">sa propre politique</a>.</td><td>Railway : États-Unis (est) · Anthropic : États-Unis</td></tr>
 <tr><td>Open Food Facts (base publique de produits)</td><td>Le code-barres scanné, rien d'autre</td><td>France</td></tr>
 <tr><td>PostHog (statistiques d'usage anonymes)</td><td>Les étapes utilisées (ouverture et sa provenance — icône, rappel, widget —, écrans du premier lancement, repas noté, bilan ouvert…), les rappels reçus et ouverts avec le type de message et de moment testés, ton profil d'usage (ex. « régulier », « nouveau »), ta tranche d'âge (9–12, 13–17, 18–25, 26–64 ou 65 ans et plus — jamais ton âge exact) et si tu étais probablement chez toi (« maison », « autre Wi-Fi » ou « réseau mobile » — jamais le nom du réseau ni ta position), les erreurs rencontrées (scan ou analyse impossibles, plantage de l'app, avec le détail technique de l'erreur), la version de l'app et le modèle d'iPhone, sous un <strong>identifiant aléatoire par installation</strong> — jamais ton nom, ton e-mail, ni ce que tu manges. Désactivable dans Profil → « Statistiques anonymes ».</td><td>Union européenne (Allemagne)</td></tr>
@@ -56,6 +56,7 @@
 
 <h2>8. Mineurs</h2>
 <p>NUTRI AI est ouverte à partir de 9 ans. Avant 13 ans, l'accord d'un parent ou d'un tuteur légal est nécessaire. Cet accord se donne dans l'app, au premier lancement : nous gardons avec le compte la date de l'accord et le pays de l'appareil, pour pouvoir en apporter la preuve. Avant 13 ans, l'app ne propose ni régime, ni bilan hormonal, ni compléments. Si nous apprenons que des données d'un mineur ont été recueillies sans cet accord, nous les supprimons.</p>
+<p>Les analyses par intelligence artificielle (photo d'un repas, analyse de la semaine) sont faites par une IA, Claude d'Anthropic, et l'app le dit avant tout envoi. Comme l'app est ouverte aux mineurs, nous appliquons les lignes directrices d'Anthropic pour les services ouverts aux mineurs : à chaque analyse, l'IA reçoit des consignes de protection de l'enfance (rien qui ne convienne pas à un enfant, aucun régime, jeûne ni conseil de perte de poids rapide, renvoi vers un adulte de confiance ou un médecin en cas de difficulté) ; la mention qu'il s'agit d'une IA ; le respect des lois sur la protection des enfants et des données personnelles, dont le RGPD.</p>
 
 <h2>9. Modifications</h2>
 <p>En cas de changement, la date en haut de page est mise à jour. Un changement important sera signalé avant de s'appliquer.</p>
